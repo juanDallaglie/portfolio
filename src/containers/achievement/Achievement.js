@@ -6,6 +6,7 @@ import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 export default function Achievement() {
   const {isDark} = useContext(StyleContext);
+
   if (!achievementSection.display) {
     return null;
   }
