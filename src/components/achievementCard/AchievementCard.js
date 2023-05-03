@@ -14,11 +14,23 @@ export default function AchievementCard({cardInfo, isDark}) {
   return (
     <div className={isDark ? "dark-mode certificate-card" : "certificate-card"}>
       <div className="certificate-image-div">
-        <img
-          src={cardInfo.image}
-          alt={cardInfo.imageAlt || "Card Thumbnail"}
-          className="card-image"
-        ></img>
+        {cardInfo.image != null ? (
+          <img
+            src={cardInfo.image}
+            alt={cardInfo.imageAlt || "Card Thumbnail"}
+            className="card-image"
+          ></img>
+        ) : (
+          <h5
+            className={
+              isDark
+                ? "dark-mode trophy-for-achievements "
+                : "trophy-for-achievements "
+            }
+          >
+            🏆
+          </h5>
+        )}
       </div>
       <div className="certificate-detail-div">
         <h5 className={isDark ? "dark-mode card-title" : "card-title"}>

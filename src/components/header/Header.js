@@ -5,19 +5,21 @@ import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
 import {
   greeting,
-  workExperiences,
-  skillsSection,
+  workexperiencias,
+  habilidadesSection,
   openSource,
   blogSection,
   talkSection,
-  achievementSection
+  achievementSection,
+  educationInfo
 } from "../../portfolio";
 
 function Header() {
   const {isDark} = useContext(StyleContext);
-  const viewExperience = workExperiences.display;
+  const viewexperiencia = workexperiencias.display;
   const viewOpenSource = openSource.display;
-  const viewSkills = skillsSection.display;
+  const viewhabilidades = habilidadesSection.display;
+  const viewEducation = educationInfo.display;
   const viewAchievement = achievementSection.display;
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
@@ -26,9 +28,9 @@ function Header() {
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
         <a href="/" className="logo">
-          <span className="grey-color"> &lt;</span>
+          {/* <span className="grey-color"> &lt;</span> */}
           <span className="logo-name">{greeting.username}</span>
-          <span className="grey-color">/&gt;</span>
+          {/* <span className="grey-color">/&gt;</span> */}
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label
@@ -39,14 +41,19 @@ function Header() {
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
-          {viewSkills && (
+          {viewhabilidades && (
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#Habilidades">Habilidades</a>
             </li>
           )}
-          {viewExperience && (
+          {viewEducation && (
             <li>
-              <a href="#experience">Work Experiences</a>
+              <a href="#education">Educacion</a>
+            </li>
+          )}{" "}
+          {viewexperiencia && (
+            <li>
+              <a href="#experiencia">Experiencia</a>
             </li>
           )}
           {viewOpenSource && (
@@ -56,7 +63,7 @@ function Header() {
           )}
           {viewAchievement && (
             <li>
-              <a href="#achievements">Achievements</a>
+              <a href="#achievements">Premios</a>
             </li>
           )}
           {viewBlog && (

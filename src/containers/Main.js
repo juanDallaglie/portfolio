@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
-import Skills from "./skills/Skills";
 import StackProgress from "./skillProgress/skillProgress";
 import WorkExperience from "./workExperience/WorkExperience";
 import Projects from "./projects/Projects";
@@ -20,6 +19,7 @@ import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
+import Habilidades from "./habilidades/Habilidades";
 
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
@@ -52,7 +52,7 @@ const Main = () => {
           <>
             <Header />
             <Greeting />
-            <Skills />
+            <Habilidades />
             <StackProgress />
             <Education />
             <WorkExperience />

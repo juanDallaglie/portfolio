@@ -31,28 +31,31 @@ export default function ExperienceCard({cardInfo, isDark}) {
   };
 
   return (
-    <div className={isDark ? "experience-card-dark" : "experience-card"}>
-      <div style={{background: rgb(colorArrays)}} className="experience-banner">
-        <div className="experience-blurred_div"></div>
-        <div className="experience-div-company">
-          <h5 className="experience-text-company">{cardInfo.company}</h5>
+    <div className={isDark ? "experiencia-card-dark" : "experiencia-card"}>
+      <div
+        style={{background: rgb(colorArrays)}}
+        className="experiencia-banner"
+      >
+        <div className="experiencia-blurred_div"></div>
+        <div className="experiencia-div-company">
+          <h5 className="experiencia-text-company">{cardInfo.company}</h5>
         </div>
 
         <img
           crossOrigin={"anonymous"}
           ref={imgRef}
-          className="experience-roundedimg"
+          className="experiencia-roundedimg"
           src={cardInfo.companylogo}
           alt={cardInfo.company}
           onLoad={() => getColorArrays()}
         />
       </div>
-      <div className="experience-text-details">
+      <div className="experiencia-text-details">
         <h5
           className={
             isDark
-              ? "experience-text-role dark-mode-text"
-              : "experience-text-role"
+              ? "experiencia-text-role dark-mode-text"
+              : "experiencia-text-role"
           }
         >
           {cardInfo.role}
@@ -60,8 +63,8 @@ export default function ExperienceCard({cardInfo, isDark}) {
         <h5
           className={
             isDark
-              ? "experience-text-date dark-mode-text"
-              : "experience-text-date"
+              ? "experiencia-text-date dark-mode-text"
+              : "experiencia-text-date"
           }
         >
           {cardInfo.date}
@@ -69,8 +72,8 @@ export default function ExperienceCard({cardInfo, isDark}) {
         <p
           className={
             isDark
-              ? "subTitle experience-text-desc dark-mode-text"
-              : "subTitle experience-text-desc"
+              ? "subTitle experiencia-text-desc dark-mode-text"
+              : "subTitle experiencia-text-desc"
           }
         >
           {cardInfo.desc}

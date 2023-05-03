@@ -9,10 +9,10 @@ export default function StackProgress() {
   if (techStack.viewSkillBars) {
     return (
       <Fade bottom duration={1000} distance="20px">
-        <div className="skills-container">
-          <div className="skills-bar">
-            <h1 className="skills-heading">Proficiency</h1>
-            {techStack.experience.map((exp, i) => {
+        <div className="Habilidades-container">
+          <div className="Habilidades-bar">
+            <h1 className="Habilidades-heading">Proficiency</h1>
+            {techStack.experiencia.map((exp, i) => {
               const progressStyle = {
                 width: exp.progressPercentage
               };
@@ -27,12 +27,12 @@ export default function StackProgress() {
             })}
           </div>
 
-          <div className="skills-image">
+          <div className="Habilidades-image">
             {illustration.animated ? (
               <DisplayLottie animationData={Build} />
             ) : (
               <img
-                alt="Skills"
+                alt="habilidades"
                 src={require("../../assets/images/skill.svg")}
               />
             )}

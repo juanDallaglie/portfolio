@@ -20,140 +20,249 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Juan Jose Dallaglie",
+  title: "Portfolio de Juan Jose Dallaglie",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Soy un médico especialista en cirugía general y oncología, con amplia experiencia en clínica quirúrgica, gastroenterología y trasplante de riñón y páncreas. Mi trayectoria profesional ha sido reconocida a través de diversas certificaciones y reconocimientos de colegios de médicos y asociaciones de cirugía. Me gradué en la Facultad de Ciencias Médicas de la Universidad de Buenos Aires en 1978 y he ejercido la medicina durante más de tres décadas. Además de mi especialización en cirugía, he profundizado mis conocimientos en políticas sanitarias y administración hospitalaria. Me apasiona la investigación y la enseñanza en el ámbito médico y he impartido numerosas conferencias y cursos de formación. Considero que la medicina es una vocación de servicio a los demás y estoy comprometido en brindar una atención de calidad y calidez a mis pacientes."
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+  // resumeLink: "https://google.com", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  // github: "https://github.com/saadpasta",
+  // linkedin: "https://www.linkedin.com/in/saadpasta/",
+  // gmail: "JuanDallaglie@gmail.com",
+  // gitlab: "https://gitlab.com/saadpasta",
+  // facebook: "https://www.facebook.com/saad.pasta7",
+  // medium: "https://medium.com/@saadpasta",
+  // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
 };
 
-// Skills Section
-
-const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
-  skills: [
+// habilidades Section
+const habilidadesSection = {
+  title: "Lo que hago",
+  subTitle: "MÉDICO CON EXPERIENCIA EN CUIDADOS INTENSIVOS Y CARDIOLOGÍA",
+  Habilidades: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Trato pacientes en entornos de cuidados intensivos y en consultorios"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Realizo procedimientos médicos, como inserción de catéteres y ventilación mecánica"
+    ),
+    emoji(
+      "⚡ Evalúo y diagnostico pacientes con enfermedades cardíacas y administro tratamiento"
+    ),
+    emoji(
+      "⚡ Colaboro con otros profesionales médicos para proporcionar atención integral al paciente"
     )
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
-  softwareSkills: [
+  softwarehabilidades: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "Instrumentación Quirúrgica",
+      fontAwesomeClassname: "fas fa-cut"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "Manejo de Anestesia",
+      fontAwesomeClassname: "fas fa-heartbeat"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "Enseñanza",
+      fontAwesomeClassname: "fas fa-chalkboard-teacher"
     },
     {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      skillName: "Historias Clínicas",
+      fontAwesomeClassname: "fas fa-file-medical"
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "Sistemas de Gestión Hospitalaria",
+      fontAwesomeClassname: "fas fa-hospital"
     }
   ],
   display: true // Set false to hide this section, defaults to true
 };
-
-// Education Section
+// Educacion Section
 
 const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName:
+        "Facultad de Ciencias Médicas de la Universidad de Buenos Aires",
+      // logo: require("./assets/images/ubalogo.png"),
+      subHeader: "Doctor of Medicine",
+      duration: "March 1972 - August 1978",
+      desc: "",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Issued by the Faculty of Medical Sciences of the University of Buenos Aires"
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Academia Argentina de Cirugía",
+      // logo: require("./assets/images/aacLogo.png"),
+      subHeader: "Specialist in General Surgery",
+      duration: "1984",
+      desc: "",
+      descBullets: [
+        "Recognized by the Academia Argentina de Cirugía, Ministerio de Salud pública de la Nación"
+      ]
+    },
+    {
+      schoolName:
+        "Colegio de Médicos de la Provincia de Buenos Aires, Distrito IV",
+      // logo: require("./assets/images/cmdpbaLogo.png"),
+      subHeader: "Specialist in Clinical Surgery",
+      duration: "September 1984",
+      desc: "",
+      descBullets: [
+        "Issued by the Colegio de Médicos de la Provincia de Buenos Aires, Distrito IV"
+      ]
+    },
+    {
+      schoolName: "Colegio de Médicos Distrito IV",
+      // logo: require("./assets/images/cmdivLogo.png"),
+      subHeader: "Specialist in Hierarchical Clinical Surgery",
+      duration: "December 1990",
+      desc: "",
+      descBullets: ["Issued by the Colegio de Médicos Distrito IV"]
+    },
+    {
+      schoolName: "Colegio de Médicos, Distrito IV",
+      // logo: require("./assets/images/cmdpbaLogo.png"),
+      subHeader: "Specialist in Gastroenterological Surgery",
+      duration: "February 1990",
+      desc: "",
+      descBullets: ["Issued by the Colegio de Médicos, Distrito IV"]
+    },
+    {
+      schoolName: "INCUCAI",
+      // logo: require("./assets/images/incucaiLogo.png"),
+      subHeader: "Authorized Kidney and Pancreas Transplant Surgeon",
+      duration: "1989",
+      desc: "",
+      descBullets: ["Issued by INCUCAI"]
+    },
+    {
+      schoolName: "Universidad de Buenos Aires",
+      // logo: require("./assets/images/ubalogo.png"),
+      subHeader: "Specialist in Oncological Surgery",
+      duration: "1984",
+      desc: "",
+      descBullets: ["Issued by the Universidad de Buenos Aires"]
+    },
+    {
+      schoolName: "Asociación Argentina de Cirugía",
+      // logo: require("./assets/images/aacLogo.png"),
+      subHeader: "Recertification of Specialist in General Surgery",
+      duration: "October 1993",
+      desc: "",
+      descBullets: ["Issued by the Asociación Argentina de Cirugía"]
+    },
+    {
+      schoolName:
+        "Consejo de Profesionales Médicos - Academia Nacional de Medicina",
+      // logo: require("./assets/images/anmLogo.png"),
+      subHeader: "Recertification of Medical Surgeon",
+      duration: "August 1993",
+      desc: ""
+    },
+    {
+      schoolName:
+        "Facultad de Ciencias Médicas de la Universidad de Buenos Aires",
+      // logo: require("./assets/images/ubalogo.png"),
+      subHeader: "Doctor of Medicine",
+      duration: "March 1972 - August 1978",
+      desc: "",
+      descBullets: [
+        "Issued by the Faculty of Medical Sciences of the University of Buenos Aires"
+      ]
+    },
+    {
+      schoolName: "Academia Argentina de Cirugía",
+      // logo: require("./assets/images/aacLogo.png"),
+      subHeader: "Specialist in General Surgery",
+      duration: "1984",
+      desc: "",
+      descBullets: [
+        "Recognized by the Academia Argentina de Cirugía, Ministerio de Salud pública de la Nación"
+      ]
+    },
+    {
+      schoolName:
+        "Colegio de Médicos de la Provincia de Buenos Aires, Distrito IV",
+      // logo: require("./assets/images/cmdpbaLogo.png"),
+      subHeader: "Specialist in Clinical Surgery",
+      duration: "September 1984",
+      desc: "",
+      descBullets: [
+        "Issued by the Colegio de Médicos de la Provincia de Buenos Aires, Distrito IV"
+      ]
+    },
+    {
+      schoolName: "Colegio de Médicos Distrito IV",
+      // logo: require("./assets/images/cmdivLogo.png"),
+      subHeader: "Specialist in Hierarchical Clinical Surgery",
+      duration: "December 1990",
+      desc: "",
+      descBullets: ["Issued by the Colegio de Médicos Distrito IV"]
+    },
+    {
+      schoolName: "Colegio de Médicos, Distrito IV",
+      // logo: require("./assets/images/cmdpbaLogo.png"),
+      subHeader: "Specialist in Gastroenterological Surgery",
+      duration: "February 1990",
+      desc: "",
+      descBullets: ["Issued by the Colegio de Médicos, Distrito IV"]
+    },
+    {
+      schoolName: "INCUCAI",
+      // logo: require("./assets/images/incucaiLogo.png"),
+      subHeader: "Authorized Kidney and Pancreas Transplant Surgeon",
+      duration: "1989",
+      desc: "",
+      descBullets: ["Issued by INCUCAI"]
+    },
+    {
+      schoolName: "Universidad de Buenos Aires",
+      // logo: require("./assets/images/ubalogo.png"),
+      subHeader: "Specialist in Oncological Surgery",
+      duration: "1984",
+      desc: "",
+      descBullets: ["Issued by the Universidad de Buenos Aires"]
+    },
+    {
+      schoolName: "Asociación Argentina de Cirugía",
+      // logo: require("./assets/images/aacLogo.png"),
+      subHeader: "Recertification of Specialist in General Surgery",
+      duration: "October 1993",
+      desc: "",
+      descBullets: ["Issued by the Asociación Argentina de Cirugía"]
+    },
+    {
+      schoolName:
+        "Consejo de Profesionales Médicos - Academia Nacional de Medicina",
+      // logo: require("./assets/images/anmLogo.png"),
+      subHeader: "Recertification of Medical Surgeon",
+      duration: "August 1993",
+      desc: "",
+      descBullets: ["Issued by the Asociación Argentina de Cirugía"]
     }
   ]
 };
-
-// Your top 3 proficient stacks/tech experience
+// Your top 3 proficient stacks/tech experiencia
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
-  experience: [
+  viewSkillBars: false, //Set it to true to show Proficiency Section
+  experiencia: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      Stack: "Frontend/Design", //Insert stack or technology you have experiencia in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
@@ -168,35 +277,45 @@ const techStack = {
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
-// Work experience section
-
-const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
-  experience: [
+// Work experiencia section
+const workexperiencias = {
+  display: true, //Set it to true to show workexperiencias Section
+  experiencia: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Médico Residente",
+      company: "Hospital Universitario",
+      // companylogo: require("./assets/images/hospitalLogo.png"),
+      date: "Julio 2021 – Presente",
+      desc: "Atiendo pacientes en diferentes áreas del hospital, incluyendo urgencias, hospitalización y consultas externas. Trabajo en equipo con otros médicos y personal de enfermería para ofrecer un cuidado integral a los pacientes.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Realizo procedimientos médicos como intubación endotraqueal, colocación de catéteres venosos centrales y arteriales, y drenajes torácicos.",
+        "Colaboro en la docencia de estudiantes de medicina y en la formación de nuevos residentes.",
+        "Participo en la realización de protocolos y guías clínicas para el manejo de enfermedades y situaciones de emergencia."
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Médico General",
+      company: "Centro de Salud Familiar",
+      // companylogo: require("./assets/images/centrosaludLogo.png"),
+      date: "Enero 2019 – Julio 2021",
+      desc: "Atendía pacientes en consulta externa, realizaba procedimientos médicos como extracciones dentales, suturas y curaciones, y remitía a pacientes a especialistas en caso necesario.",
+      descBullets: [
+        "Participé en campañas de salud para la prevención y detección temprana de enfermedades como diabetes, hipertensión y cáncer.",
+        "Realicé charlas educativas para la comunidad sobre hábitos saludables y medidas de prevención de enfermedades.",
+        "Colaboré en la elaboración de informes estadísticos y de seguimiento de los pacientes atendidos."
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Médico Interno",
+      company: "Hospital Regional",
+      // companylogo: require("./assets/images/hospitalLogo.png"),
+      date: "Enero 2018 – Diciembre 2018",
+      desc: "Roté por diferentes especialidades médicas, como cirugía, pediatría y medicina interna, para adquirir experiencia clínica en diferentes áreas. Realicé procedimientos médicos bajo supervisión de médicos especialistas.",
+      descBullets: [
+        "Participé en sesiones clínicas y presentaciones de casos para discutir diagnósticos y tratamientos con otros médicos y estudiantes de medicina.",
+        "Apoyé en la realización de procedimientos quirúrgicos como asistente de cirugía.",
+        "Realicé guardias médicas en el servicio de urgencias para atender pacientes en situaciones de emergencia."
+      ]
     }
   ]
 };
@@ -206,6 +325,91 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  display: false // Set false to hide this section, defaults to true
+};
+
+// Achievement Section
+// Include certificates, talks etc
+
+const achievementSection = {
+  title: emoji("Premios 🏆 "),
+  subtitle:
+    "PREMIOS, CERTIFICACIONES, CARTAS DE RECONOCIMIENTO Y ALGUNAS COSAS GENIALES QUE HE HECHO!",
+
+  achievementsCards: [
+    {
+      title: "Premio XV Congreso Argentino de Gastroenterología",
+      subtitle:
+        "Recibí el premio por el trabajo 'Profilaxis de las lesiones agudas gastroduodenales en pacientes críticos' (Buenos Aires, octubre de 1981)",
+      // image: require("./assets/images/gastroenterologyAward.webp"),
+      imageAlt: "Premio XV Congreso Argentino de Gastroenterología",
+      footerLink: []
+    },
+    {
+      title:
+        "Premio AADI 1984 al Mejor Trabajo Científico en el V Congreso Argentino de Instrumentadoras",
+      subtitle:
+        "Recibí el premio por el tema 'Cirugía experimental y clínica en animales' (noviembre de 1984)",
+      // image: require("./assets/images/aadiAward.webp"),
+      imageAlt:
+        "Premio AADI 1984 al Mejor Trabajo Científico en el V Congreso Argentino de Instrumentadoras",
+      footerLink: []
+    },
+    {
+      title:
+        "Mención de Honor en las V Jornadas Científicas de la Asociación de Médicos de Gral. San Martín y Tres de Febrero",
+      subtitle:
+        "Recibí la mención de honor por el trabajo 'Preservación de la función esplénica por autotrasplante periférico. Investigación experimental y su aplicación clínica' (septiembre de 1984)",
+      // image: require("./assets/images/mentionOfHonorAward.webp"),
+      imageAlt:
+        "Mención de Honor en las V Jornadas Científicas de la Asociación de Médicos de Gral. San Martín y Tres de Febrero",
+      footerLink: []
+    },
+    {
+      title:
+        "Reconocimiento especial en las XV Jornadas de la provincia de Buenos Aires en Mar del Plata",
+      subtitle:
+        "Recibí el reconocimiento especial por el trabajo 'Colectomía total con conservación esfinteriana. Estudio experimental' en colaboración con el Dr. Carlos Daniel Alberti, el Dr. Juan José Dallaglio, el Dr. Eduardo Delgado, el Dr. Eugenio Obiols, el Dr. Raúl Mombello, el Dr. Luis Castelletti y el Dr. Enrique Travisano (agosto de 1986)",
+      // image: require("./assets/images/specialRecognitionAward.webp"),
+      imageAlt:
+        "Reconocimiento especial en las XV Jornadas de la provincia de Buenos Aires en Mar del Plata",
+      footerLink: []
+    },
+    {
+      title: "Premio Cirugía del Oeste",
+      subtitle:
+        "Recibí el Premio Cirugía del Oeste en las X Jornadas de la Sociedad de Cirugía del Oeste por mi trabajo en colaboración con el Dr. Carlos Daniel Alberti, el Dr. Juan José Dallaglio, la Inst. María Teresa Castro, la Inst. Elizabeth Susana Bonanata y el Dr. Eduardo Delgado, sobre 'La cirugía experimental como protocolo de la enseñanza de la instrumentación quirúrgica'.",
+      // image: require("./assets/images/cirugiaOeste.webp"),
+      imageAlt: "Premio Cirugía del Oeste",
+      footerLink: []
+    },
+    {
+      title:
+        "Premio Mejor Trabajo en las Primeras Jornadas de Oncología Clínica",
+      subtitle:
+        "Recibí el Premio Mejor Trabajo en las Primeras Jornadas de Oncología Clínica del Colegio de Médicos de Surdos e Distrito IV en el Hospital Dr. Diego E. Thompson por mi trabajo en colaboración con el Dr. Carlos Daniel Alberti, el Dr. Juan José Dallaglio, el Dr. Raúl Mombello, el Dr. Eduardo Delgado, el Dr. Eugenio Obiols y el Dr. Alfredo Montes sobre 'Injerto de traquea autólogo, heterólogo y protésico. Una propuesta experimental en cirugía de tumores de traquea y bronquios'.",
+      // image: require("./assets/images/oncologia.webp"),
+      imageAlt:
+        "Premio Mejor Trabajo en las Primeras Jornadas de Oncología Clínica",
+      footerLink: []
+    },
+    {
+      title: "Premio Juan Belaustegui del Forum de Investigación",
+      subtitle:
+        "Recibí el Premio Juan Belaustegui del Forum de Investigación en el 57 Congreso Argentino de Cirugía por el trabajo 'Autotrasplante esplénico central y periférico. Estudio experimental' en colaboración con otros profesionales de la salud.",
+      // image: require("./assets/images/premio-juan-belaustegui.jpg"),
+      imageAlt: "Premio Juan Belaustegui del Forum de Investigación",
+      footerLink: []
+    },
+    {
+      title: "Premio Juan Belaustegui del Forum de Investigación",
+      subtitle:
+        "Recibí el Premio Juan Belaustegui del Forum de Investigación en el 57 Congreso Argentino de Cirugía por el trabajo 'Autotrasplante esplénico central y periférico. Estudio experimental' en colaboración con otros profesionales de la salud.",
+      // image: require("./assets/images/premio-juan-belaustegui.jpg"),
+      imageAlt: "Premio Juan Belaustegui del Forum de Investigación",
+      footerLink: []
+    }
+  ],
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -216,7 +420,7 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
+      // image: require("./assets/images/saayaHealthLogo.webp"),
       projectName: "Saayahealth",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
@@ -228,7 +432,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
+      // image: require("./assets/images/nextuLogo.webp"),
       projectName: "Nextu",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
@@ -239,68 +443,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Achievement Section
-// Include certificates, talks etc
-
-const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
-  achievementsCards: [
-    {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
-    },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -324,7 +467,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -343,7 +486,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,22 +499,21 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+  title: emoji("Contactame ☎️"),
+  subtitle: "contactame",
   number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  email_address: "JuanDallaglie@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
@@ -381,10 +523,10 @@ export {
   greeting,
   socialMediaLinks,
   splashScreen,
-  skillsSection,
+  habilidadesSection,
   educationInfo,
   techStack,
-  workExperiences,
+  workexperiencias,
   openSource,
   bigProjects,
   achievementSection,

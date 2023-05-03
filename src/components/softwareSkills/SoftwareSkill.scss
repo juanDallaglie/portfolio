@@ -20,12 +20,12 @@
 }
 
 .software-skill-inline > i:hover {
-  color: $skillsColor;
+  color: $habilidadesColor;
 }
 .software-skill-inline > p {
   color: $subTitle;
   font-size: 10px;
 }
 .software-skill-inline > i:hover ~ p {
-  color: $skillsColor;
+  color: $habilidadesColor;
 }
